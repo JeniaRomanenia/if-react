@@ -1,0 +1,53 @@
+.home {
+  flex-grow: 1;
+  padding: 0 8px;
+  fill: var(--primary-color);
+}
+
+.col-3 {
+  width: calc(var(--col-size) * 1);
+}
+
+.homes-img {
+  width: 100%;
+  height: 296px;
+  margin-bottom: 20px;
+}
+
+.homes-link {
+  color: var(--primary-color);
+}
+
+.homes-text {
+  color: var(--secondary-text-color);
+  padding-top: 24px;
+}
+
+.homes-displaynone {
+  display: none;
+}
+
+.homes-svg-right {
+  top: 30%;
+  right: -1%;
+  fill: none;
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.homes-svg-left {
+  top: 28%;
+  right: 98%;
+  fill: none;
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  transform: rotate(180deg);
+  cursor: pointer;
+}
+
+.homes-svg-left-displaynone {
+  display: none;
+}
