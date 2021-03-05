@@ -4,11 +4,12 @@ import React from "react";
 import '../styles/components/Hotels.css';
 
 
-const Hotel = ({ children }) => (
+const Hotel = ({ hotel }) => (
     <div className="home col-3">
-        <img className="homes-img" src={children.imageUrl} alt={children.name}/>
-        <a className="homes-link">{children.name}</a>
-        <p className="homes-text">{children.city}, {children.country}</p>
-    </div>);
+        <img className="homes-img" src={hotel.imageUrl} alt={hotel.name}/>
+        <a className="homes-link">{hotel.name}</a>
+        <p className="homes-text">{hotel.city}, {hotel.country}</p>
+    </div>
+);
 
 export default Hotel;
