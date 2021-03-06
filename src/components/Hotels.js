@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 
 //styles
 import '../styles/components/Hotels.css';
@@ -11,5 +12,9 @@ const Hotel = ({ hotel }) => (
         <p className="homes-text">{hotel.city}, {hotel.country}</p>
     </div>
 );
+
+Hotel.prototype = {
+    hotel: PropTypes.object.isRequired
+};
 
 export default Hotel;

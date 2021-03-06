@@ -1,7 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 //styles
 import '../styles/components/HomesGuestsLoves.css';
+
+//components
 import Hotel from "./Hotels.js";
 
 const HomesGuestsLoves = (props) => (
@@ -14,6 +17,10 @@ const HomesGuestsLoves = (props) => (
                     ))}
             </div>
         </div>
-    </div>)
+    </div>);
+
+HomesGuestsLoves.propTypes = {
+    hotels: PropTypes.arrayOf(PropTypes.object).isRequired
+};
 
 export default HomesGuestsLoves;
