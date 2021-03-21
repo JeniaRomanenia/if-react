@@ -1,44 +1,30 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 
 // styles
-import '../styles/components/FormsTopSection.css';
+import '../styles/components/Form.css';
 
+class Form extends React.Component {
+    constructor(props) {
+        super(props);
 
-class FormsTopSection extends Component {
-    state = {
-        inputText: '',
-        showData: {
-            name: '',
-            text: '',
+        this.state = {
+            value: '',
         }
     }
 
-    handleInputChange = ({target: {value}}) => {
+    handleChange(event) {
         this.setState({
-            inputText: value,
-        })
+            value: event.target.value,
+        });
     }
 
+    handleData(event) {
 
-    handleShow = (event) => {
-        event.preventDefault();
-
-
-        const {inputText} = this.state;
-        this.setState({
-            inputText: '',
-            showData: {
-                name: inputText,
-            }
-        })
     }
+
 
     render() {
-        const {inputText, showData} = this.state;
-        const {name} = showData;
-
-
         return (
             <>
                 <form className="forms">
@@ -46,8 +32,8 @@ class FormsTopSection extends Component {
                         <input
                             className="input-form-city"
                             type="text"
-                            value={inputText}
-                            onChange={this.handleInputChange}
+                            value={this.state.value}
+                            onChange={(e) => this.handleChange(e)}
                             placeholder="New York"
                         />
                         <label className="label-form-city">
@@ -83,12 +69,17 @@ class FormsTopSection extends Component {
                             placeholder="2 Adults — 0 Children — 1 Room"
                         />
                     </div>
-                    <button className="form-button" type="submit" onClick={this.handleShow}>Search</button>
+                    <button
+                        className="form-button"
+                        type="submit"
+                        onClick={(e) => this.handleData(e)}
+                    >
+                        Search
+                    </button>
                 </form>
-                <div>{name}</div>
             </>
         )
     }
 }
 
- export default FormsTopSection;
+ export default Form;
