@@ -1,21 +1,3 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
-}
-
-.page {
-  margin-top: 198px;
-}
-
-.page-title {
-  font-size: 50px;
-  line-height: 59px;
-  color: var(--white-color);
-  margin-bottom: 145px;
-}
-
 .forms {
   display: flex;
   background-color: var(--white-color);
