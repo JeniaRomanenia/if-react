@@ -38,6 +38,7 @@ class FormsTopSection extends Component {
         const {inputText, showData} = this.state;
         const {name} = showData;
 
+
         return (
             <>
                 <form className="forms">
@@ -84,6 +85,7 @@ class FormsTopSection extends Component {
                     </div>
                     <button className="form-button" type="submit" onClick={this.handleShow}>Search</button>
                 </form>
+                <div>{name}</div>
             </>
         )
     }
