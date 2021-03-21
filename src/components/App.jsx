@@ -2,13 +2,20 @@ import React from 'react';
 
 // components
 import HomesGuestsLoves from './HomesGuestsLoves';
+import TopSection from "./TopSection";
+
 
 // styles
 import '../styles/components/App.css';
 
+
 function App() {
   return (
-    <HomesGuestsLoves />
+      <>
+
+          <TopSection />
+          <HomesGuestsLoves />
+      </>
   );
 }
 

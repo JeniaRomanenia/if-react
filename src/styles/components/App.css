@@ -1,1 +1,15 @@
+:root {
+  --primary-color: #3077c6;
+  --primary-dark-color: #10367C;
+  --secondary: #F5BD41;
+  --primary-text-color: #383838;
+  --secondary-text-color: #BFBFBF;
+  --gray100: #121212;
+  --gray200: #1D1E1F;
+  --gray300: #4D4D4D;
+  --stroke-color: #F3F3F4;
+  --bg-color: #EAF0F9;
+  --white-color: #FFFFFF;
+  --col-size: calc(100% / 12);
+}
 

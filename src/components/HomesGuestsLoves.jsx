@@ -11,7 +11,6 @@ import { hotels } from '../constants/content';
 import Hotel from './Hotels.jsx';
 
 const HomesGuestsLoves = () => (
-  // eslint-disable-next-line react/jsx-filename-extension
   <div className="homes">
     <div className="container">
       <h2 className="h2-text">Homes guests loves</h2>
