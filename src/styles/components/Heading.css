@@ -1,0 +1,10 @@
+.page {
+  margin-top: 198px;
+}
+
+.page-title {
+  font-size: 50px;
+  line-height: 59px;
+  color: var(--white-color);
+  margin-bottom: 145px;
+}
