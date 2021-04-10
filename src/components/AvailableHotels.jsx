@@ -15,11 +15,7 @@ const AvailableHotels = () => (
                 Available hotels
             </h2>
             <div className='row'>
-                {hotels.filter(hotel => {
-                    (hotel.country.toLowerCase().includes(this.state.name.toLowerCase())
-                        ||hotel.city.toLowerCase().includes(this.state.name.toLowerCase())
-                        ||hotel.name.toLowerCase().includes(this.state.name.toLowerCase()))
-                }).map((hotel) => (
+                {hotels.map((hotel) => (
                     <Hotel
                         key={hotel.id}
                         hotel={hotel}

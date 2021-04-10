@@ -8,19 +8,18 @@ class Form extends React.Component {
     constructor(props) {
         super(props);
 
-        this.state = {
-            value: '',
-        }
+        this.state = {value: ''};
+
+        this.handleChange = this.handleChange.bind(this);
+        this.handleData = this.handleData.bind(this);
     }
 
     handleChange(event) {
-        this.setState({
-            value: event.target.value,
-        });
+        this.setState({value: event.target.value,});
     }
 
     handleData(event) {
-
+        event.preventDefault();
     }
 
 
@@ -33,7 +32,7 @@ class Form extends React.Component {
                             className="input-form-city"
                             type="text"
                             value={this.state.value}
-                            onChange={(e) => this.handleChange(e)}
+                            onChange= {this.handleChange}
                             placeholder="New York"
                         />
                         <label className="label-form-city">
@@ -72,7 +71,7 @@ class Form extends React.Component {
                     <button
                         className="form-button"
                         type="submit"
-                        onClick={(e) => this.handleData(e)}
+                        onClick={this.handleData}
                     >
                         Search
                     </button>

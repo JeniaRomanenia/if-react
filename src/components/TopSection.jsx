@@ -5,13 +5,8 @@ import Navigation from "./Navigation";
 import Heading from "./Heading";
 import Icon from "./Icon";
 
-
 // styles
 import '../styles/components/TopSection.css';
-
-
-
-
 
 const TopSection = () => (
     <div className="top-section" >

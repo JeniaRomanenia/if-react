@@ -4,7 +4,6 @@ import React from 'react';
 import HomesGuestsLoves from './HomesGuestsLoves';
 import TopSection from "./TopSection";
 
-
 // styles
 import '../styles/components/App.css';
 
